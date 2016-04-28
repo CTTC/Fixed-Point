@@ -1,4 +1,8 @@
 function xc=FixedPoint(f,x0,TOL)
+% Input: f is an anonymous function
+%        x0 is the starting point
+%        TOL is the tolerance
+% Output:xc is the root
 x1=f(x0);
 t=0;
 while(abs(x1-x0)>TOL&&t<20)
